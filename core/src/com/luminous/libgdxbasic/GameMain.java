@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+import helpers.GameInfo;
 import sun.security.timestamp.TSRequest;
 
 public class GameMain extends Game {
@@ -27,7 +28,7 @@ public class GameMain extends Game {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		batch.draw(img, 0, 0);
-		batch.draw(img2, 480/2 - img2.getWidth() / 2, 800/2 - img2.getHeight() / 2);
+		batch.draw(img2, GameInfo.WIDTH /2 - img2.getWidth() / 2, GameInfo.HEIGHT/2 - img2.getHeight() / 2);
 		batch.end();
 	}
 	
