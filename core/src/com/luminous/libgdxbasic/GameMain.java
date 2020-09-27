@@ -7,14 +7,18 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+import sun.security.timestamp.TSRequest;
+
 public class GameMain extends Game {
 	SpriteBatch batch;
 	Texture img;
+	Texture img2;
 	
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
 		img = new Texture("Game BG.png");
+		img2 = new Texture("badlogic.jpg");
 	}
 
 	@Override
@@ -23,6 +27,7 @@ public class GameMain extends Game {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		batch.draw(img, 0, 0);
+		batch.draw(img2, 480/2 - img2.getWidth() / 2, 800/2 - img2.getHeight() / 2);
 		batch.end();
 	}
 	
