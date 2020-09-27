@@ -19,6 +19,7 @@ public class GameMain extends Game {
 		batch = new SpriteBatch();
 		img = new Texture("Game BG.png");
 		player = new Sprite(new Texture("Player 1.png"));
+		player.setPosition(GameInfo.WIDTH / 2 - player.getWidth() / 2, GameInfo.HEIGHT / 2 - player.getHeight() / 2);
 	}
 
 	@Override
@@ -27,7 +28,7 @@ public class GameMain extends Game {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		batch.draw(img, 0, 0);
-		batch.draw(player, GameInfo.WIDTH /2 - player.getWidth() / 2, GameInfo.HEIGHT/2 - player.getHeight() / 2);
+		batch.draw(player, player.getX(), player.getY());
 		batch.end();
 	}
 	
