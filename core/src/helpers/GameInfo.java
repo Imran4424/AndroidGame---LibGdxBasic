@@ -5,5 +5,5 @@ package helpers;
  */
 public class GameInfo {
     public static int width = 480;
-    public static int height = 800;
+    public static int height = 800; 
 }
