@@ -7,11 +7,13 @@ import com.badlogic.gdx.Screen;
  */
 public class MainMenu implements Screen {
 
+    // first to call
     @Override
     public void show() {
 
     }
 
+    // called based on fps count in a second
     @Override
     public void render(float delta) {
 
