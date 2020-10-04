@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.luminous.libgdxbasic.GameMain;
 
+import Player.Player;
 import helpers.GameInfo;
 
 /**
@@ -17,13 +18,12 @@ public class MainMenu implements Screen {
 
     private GameMain game;
     private Texture bg;
-    private Sprite player;
+    private Player player;
 
     public MainMenu(GameMain game) {
         this.game = game;
         bg = new Texture("Game BG.png");
-        player = new Sprite(new Texture("Player 1.png"));
-        player.setPosition(GameInfo.WIDTH / 2 - player.getWidth() / 2, GameInfo.HEIGHT / 2 - player.getHeight() / 2);
+        player = new Player("Player 1.png", GameInfo.WIDTH / 2, GameInfo.HEIGHT / 2);
     }
 
     // first to call
