@@ -1,6 +1,7 @@
 package scenes;
 
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.Texture;
 import com.luminous.libgdxbasic.GameMain;
 
 /**
@@ -9,9 +10,11 @@ import com.luminous.libgdxbasic.GameMain;
 public class MainMenu implements Screen {
 
     private GameMain game;
+    private Texture bg;
 
     public MainMenu(GameMain game) {
         this.game = game;
+        bg = new Texture("Game BG.png");
     }
 
     // first to call
