@@ -8,13 +8,15 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import helpers.GameInfo;
+import scenes.MainMenu;
 
 public class GameMain extends Game {
 	private SpriteBatch batch;
 
 	@Override
 	public void create () {
-
+		batch = new SpriteBatch();
+		setScreen(new MainMenu(this));
 	}
 
 	@Override

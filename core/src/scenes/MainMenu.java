@@ -26,7 +26,9 @@ public class MainMenu implements Screen {
     // called based on number of frames per second - fps
     @Override
     public void render(float delta) {
-
+        game.getBatch().begin();
+        game.getBatch().draw(bg, 0, 0);
+        game.getBatch().end();
     }
 
     @Override
