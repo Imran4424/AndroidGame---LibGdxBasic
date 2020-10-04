@@ -13,7 +13,7 @@ public class MainMenu implements Screen {
 
     }
 
-    // called based on fps count in a second
+    // called based on number of frames per second - fps
     @Override
     public void render(float delta) {
 
@@ -39,6 +39,7 @@ public class MainMenu implements Screen {
 
     }
 
+    // this will be called when we terminate the application or scene
     @Override
     public void dispose() {
 
