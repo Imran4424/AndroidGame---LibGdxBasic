@@ -10,8 +10,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import helpers.GameInfo;
 
 public class GameMain extends Game {
-	public SpriteBatch batch;
-	
+	private SpriteBatch batch;
+
 	@Override
 	public void create () {
 
@@ -25,5 +25,9 @@ public class GameMain extends Game {
 	@Override
 	public void dispose () {
 		batch.dispose();
+	}
+
+	public SpriteBatch getBatch() {
+		return  batch;
 	}
 }
