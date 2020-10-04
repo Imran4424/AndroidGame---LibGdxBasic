@@ -11,6 +11,6 @@ public class Player extends Sprite {
 
     public Player(String name, float x, float y) {
         super(new Texture(name));
-        setPosition(x - getWidth() / 2, getHeight() / 2);
+        setPosition(x - getWidth() / 2, y - getHeight() / 2);
     }
 }
