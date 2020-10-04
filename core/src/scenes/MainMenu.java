@@ -1,6 +1,8 @@
 package scenes;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.luminous.libgdxbasic.GameMain;
 
@@ -26,6 +28,9 @@ public class MainMenu implements Screen {
     // called based on number of frames per second - fps
     @Override
     public void render(float delta) {
+        Gdx.gl.glClearColor(1, 0, 0 , 1);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
         game.getBatch().begin();
         game.getBatch().draw(bg, 0, 0);
         game.getBatch().end();
