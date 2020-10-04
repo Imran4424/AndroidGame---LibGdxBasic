@@ -4,7 +4,11 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.luminous.libgdxbasic.GameMain;
+
+import helpers.GameInfo;
 
 /**
  * Created by Shah Md Imran Hossain on 03, October, 2020
@@ -13,10 +17,13 @@ public class MainMenu implements Screen {
 
     private GameMain game;
     private Texture bg;
+    private Sprite player;
 
     public MainMenu(GameMain game) {
         this.game = game;
         bg = new Texture("Game BG.png");
+        player = new Sprite(new Texture("Player 1.png"));
+        player.setPosition(GameInfo.WIDTH / 2 - player.getWidth() / 2, GameInfo.HEIGHT / 2 - player.getHeight() / 2);
     }
 
     // first to call
