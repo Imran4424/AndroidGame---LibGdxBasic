@@ -1,11 +1,18 @@
 package scenes;
 
 import com.badlogic.gdx.Screen;
+import com.luminous.libgdxbasic.GameMain;
 
 /**
  * Created by Shah Md Imran Hossain on 03, October, 2020
  */
 public class MainMenu implements Screen {
+
+    private GameMain game;
+
+    public MainMenu(GameMain game) {
+        this.game = game;
+    }
 
     // first to call
     @Override
