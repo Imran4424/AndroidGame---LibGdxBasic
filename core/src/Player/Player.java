@@ -24,5 +24,6 @@ public class Player extends Sprite {
 
         // a static body is not affected by gravity or other forces
         // a kinematic body is not affected by gravity but it is affected by other forces
+        // a dynamic body is affected by gravity and other forces
     }
 }
