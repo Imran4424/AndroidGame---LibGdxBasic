@@ -26,5 +26,7 @@ public class Player extends Sprite {
         // a kinematic body is not affected by gravity but it is affected by other forces
         // a dynamic body is affected by gravity and other forces
         bodyDef.type = BodyDef.BodyType.DynamicBody;
+
+        bodyDef.position.set(getX(), getY());
     }
 }
