@@ -67,6 +67,7 @@ public class MainMenu implements Screen {
     // this will be called when we terminate the application or scene
     @Override
     public void dispose() {
-
+        bg.dispose();
+        player.getTexture().dispose();
     }
 }
