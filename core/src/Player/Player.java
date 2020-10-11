@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.BodyDef;
+import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 
 /**
@@ -30,5 +31,8 @@ public class Player extends Sprite {
         bodyDef.position.set(getX(), getY());
 
         body = world.createBody(bodyDef);
+
+        PolygonShape polygonShape = new PolygonShape();
+        polygonShape.setAsBox(getWidth() / 2, getHeight() / 2);
     }
 }
