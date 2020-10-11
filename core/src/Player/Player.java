@@ -43,5 +43,7 @@ public class Player extends Sprite {
         fixtureDef.density = 1;
 
         Fixture fixture = body.createFixture(fixtureDef);
+
+        polygonShape.dispose();
     }
 }
