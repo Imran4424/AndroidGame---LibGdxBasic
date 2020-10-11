@@ -28,5 +28,7 @@ public class Player extends Sprite {
         bodyDef.type = BodyDef.BodyType.DynamicBody;
 
         bodyDef.position.set(getX(), getY());
+
+        body = world.createBody(bodyDef);
     }
 }
