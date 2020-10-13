@@ -39,6 +39,8 @@ public class MainMenu implements Screen {
     // called based on number of frames per second - fps
     @Override
     public void render(float delta) {
+        player.updatePlayer();
+
         Gdx.gl.glClearColor(1, 0, 0 , 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
