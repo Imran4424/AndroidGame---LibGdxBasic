@@ -27,7 +27,7 @@ public class MainMenu implements Screen {
         this.game = game;
         world = new World(new Vector2(0, -9.8f), true);
         bg = new Texture("Game BG.png");
-        player = new Player("Player 1.png", GameInfo.WIDTH / 2, GameInfo.HEIGHT / 2);
+        player = new Player(world,"Player 1.png", GameInfo.WIDTH / 2, GameInfo.HEIGHT / 2);
     }
 
     // first to call
