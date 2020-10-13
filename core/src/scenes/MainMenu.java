@@ -46,6 +46,8 @@ public class MainMenu implements Screen {
         game.getBatch().draw(bg, 0, 0);
         game.getBatch().draw(player, player.getX(), player.getY());
         game.getBatch().end();
+
+        world.step();
     }
 
     @Override
