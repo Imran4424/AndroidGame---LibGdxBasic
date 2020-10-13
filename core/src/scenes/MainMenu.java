@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.World;
 import com.luminous.libgdxbasic.GameMain;
 
@@ -24,6 +25,7 @@ public class MainMenu implements Screen {
 
     public MainMenu(GameMain game) {
         this.game = game;
+        world = new World(new Vector2(0, -9.8f), true);
         bg = new Texture("Game BG.png");
         player = new Player("Player 1.png", GameInfo.WIDTH / 2, GameInfo.HEIGHT / 2);
     }
