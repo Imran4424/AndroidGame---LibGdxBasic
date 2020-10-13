@@ -47,4 +47,8 @@ public class Player extends Sprite {
 
         polygonShape.dispose();
     }
+
+    public void updatePlayer() {
+        this.setPosition(body.getPosition().x, body.getPosition().y);
+    }
 }
