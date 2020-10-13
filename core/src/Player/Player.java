@@ -41,7 +41,7 @@ public class Player extends Sprite {
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.shape = polygonShape;
         // mass
-        fixtureDef.density = 1;
+        fixtureDef.density = 1f;
 
         Fixture fixture = body.createFixture(fixtureDef);
 
