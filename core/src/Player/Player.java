@@ -52,7 +52,7 @@ public class Player extends Sprite {
     }
 
     public void updatePlayer() {
-        this.setPosition(body.getPosition().x * GameInfo.PPM,
-                body.getPosition().y * GameInfo.PPM);
+//        this.setPosition(body.getPosition().x * GameInfo.PPM, body.getPosition().y * GameInfo.PPM);
+        this.setPosition(body.getPosition().x, 40);
     }
 }
