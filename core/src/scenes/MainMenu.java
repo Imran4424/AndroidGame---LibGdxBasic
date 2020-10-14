@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
 import com.luminous.libgdxbasic.GameMain;
 
@@ -24,6 +25,7 @@ public class MainMenu implements Screen {
     private Player player;
     private World world;
     private OrthographicCamera box2DCamera;
+    private Box2DDebugRenderer box2DDebugRenderer;
 
     public MainMenu(GameMain game) {
         this.game = game;
