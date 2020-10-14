@@ -23,6 +23,8 @@ public class Player extends Sprite {
         super(new Texture(name));
         this.world = world;
         setPosition(x - getWidth() / 2, y - getHeight() / 2);
+
+        createBody();
     }
 
     void createBody() {
