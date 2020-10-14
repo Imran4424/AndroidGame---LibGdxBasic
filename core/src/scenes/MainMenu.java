@@ -30,7 +30,8 @@ public class MainMenu implements Screen {
     public MainMenu(GameMain game) {
         this.game = game;
         box2DCamera = new OrthographicCamera();
-        box2DCamera.setToOrtho(false, GameInfo.WIDTH / GameInfo.PPM, GameInfo.HEIGHT / GameInfo.PPM);
+        box2DCamera.setToOrtho(false, GameInfo.WIDTH / GameInfo.PPM,
+                GameInfo.HEIGHT / GameInfo.PPM);
         box2DCamera.position.set(GameInfo.WIDTH / 2f, GameInfo.HEIGHT / 2f, 0);
 
         box2DDebugRenderer = new Box2DDebugRenderer();
