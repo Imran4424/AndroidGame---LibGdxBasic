@@ -33,7 +33,7 @@ public class Player extends Sprite {
         // a static body is not affected by gravity or other forces
         // a kinematic body is not affected by gravity but it is affected by other forces
         // a dynamic body is affected by gravity and other forces
-        bodyDef.type = BodyDef.BodyType.DynamicBody;
+        bodyDef.type = BodyDef.BodyType.StaticBody;
 
         bodyDef.position.set(getX() / GameInfo.PPM, getY() / GameInfo.PPM);
 
@@ -54,7 +54,6 @@ public class Player extends Sprite {
     }
 
     public void updatePlayer() {
-//        this.setPosition(body.getPosition().x * GameInfo.PPM, body.getPosition().y * GameInfo.PPM);
-        this.setPosition(body.getPosition().x, 40);
+        this.setPosition(body.getPosition().x * GameInfo.PPM, body.getPosition().y * GameInfo.PPM);
     }
 }
