@@ -9,6 +9,8 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 
+import helpers.GameInfo;
+
 /**
  * Created by Shah Md Imran Hossain on 04, October, 2020
  */
@@ -31,7 +33,7 @@ public class Player extends Sprite {
         // a dynamic body is affected by gravity and other forces
         bodyDef.type = BodyDef.BodyType.DynamicBody;
 
-        bodyDef.position.set(getX(), getY());
+        bodyDef.position.set(getX() / GameInfo.PPM, getY() / GameInfo.PPM);
 
         body = world.createBody(bodyDef);
 
