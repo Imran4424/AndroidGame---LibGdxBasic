@@ -32,7 +32,9 @@ public class MainMenu implements Screen {
         box2DCamera = new OrthographicCamera();
         box2DCamera.setToOrtho(false, GameInfo.WIDTH, GameInfo.HEIGHT);
         box2DCamera.position.set(GameInfo.WIDTH / 2f, GameInfo.HEIGHT / 2f, 0);
-        
+
+        box2DDebugRenderer = new Box2DDebugRenderer();
+
         world = new World(new Vector2(0, -9.8f), true);
         bg = new Texture("Game BG.png");
         player = new Player(world,"Player 1.png", GameInfo.WIDTH / 2, GameInfo.HEIGHT / 2);
