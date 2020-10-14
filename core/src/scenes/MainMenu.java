@@ -57,7 +57,7 @@ public class MainMenu implements Screen {
 
         game.getBatch().begin();
         game.getBatch().draw(bg, 0, 0);
-        game.getBatch().draw(player, player.getX(), player.getY());
+        game.getBatch().draw(player, player.getX(), player.getY() - player.getHeight() / 2);
         game.getBatch().end();
 
         box2DDebugRenderer.render(world, box2DCamera.combined);
