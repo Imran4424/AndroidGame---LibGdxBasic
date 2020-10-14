@@ -38,7 +38,8 @@ public class Player extends Sprite {
         body = world.createBody(bodyDef);
 
         PolygonShape polygonShape = new PolygonShape();
-        polygonShape.setAsBox((getWidth() / 2) / GameInfo.PPM, (getHeight() / 2) / GameInfo.PPM);
+        polygonShape.setAsBox((getWidth() / 2) / GameInfo.PPM,
+                (getHeight() / 2) / GameInfo.PPM);
 
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.shape = polygonShape;
@@ -51,6 +52,7 @@ public class Player extends Sprite {
     }
 
     public void updatePlayer() {
-        this.setPosition(body.getPosition().x, body.getPosition().y);
+        this.setPosition(body.getPosition().x * GameInfo.PPM,
+                body.getPosition().y * GameInfo.PPM);
     }
 }
