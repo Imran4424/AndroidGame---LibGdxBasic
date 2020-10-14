@@ -3,6 +3,7 @@ package scenes;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -22,6 +23,7 @@ public class MainMenu implements Screen {
     private Texture bg;
     private Player player;
     private World world;
+    private OrthographicCamera box2DCamera;
 
     public MainMenu(GameMain game) {
         this.game = game;
